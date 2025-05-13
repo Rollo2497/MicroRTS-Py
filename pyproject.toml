@@ -20,7 +20,7 @@ spyder = {version = "^5.1.5", optional = true}
 PettingZoo = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
-poetry-dynamic-versioning = "^0.13.0"
+#poetry-dynamic-versioning = "^0.13.0"
 tensorboard = "^2.5.0"
 wandb = "^0.12.1"
 trueskill = "^0.4.5"
