@@ -11,6 +11,11 @@ exclude = [
     "gym_microrts/microrts/lib/*.jar",
 ]
 
+[[tool.poetry.source]]
+name     = "pytorch-nightly"
+url      = "https://download.pytorch.org/whl/nightly/cpu-cxx11-abi/torch-2.8.0.dev20250314%2Bcpu.cxx11.abi-cp310-cp310-linux_x86_64.whl"
+priority = "explicit"
+
 [tool.poetry.dependencies]
 python = ">=3.9.0,<3.10"
 gym = "0.23.1"
@@ -20,12 +25,12 @@ spyder = {version = "^5.1.5", optional = true}
 PettingZoo = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
-#poetry-dynamic-versioning = "^0.13.0"
+poetry-dynamic-versioning = "^0.13.0"
 tensorboard = "^2.5.0"
 wandb = "^0.12.1"
 trueskill = "^0.4.5"
 stable-baselines3 = "^1.1.0"
-torch = "1.7.1"
+torch = { version = "*", source = "pytorch-nightly" }
 pytest = "^6.2.5"
 pre-commit = "^2.17.0"
 jupyter-client = "^7.0.0"
