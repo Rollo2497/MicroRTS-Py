@@ -25,7 +25,7 @@ tensorboard = "^2.5.0"
 wandb = "^0.12.1"
 trueskill = "^0.4.5"
 stable-baselines3 = "^1.1.0"
-torch = { version = "2.7.0+cu128"}
+torch = {version = "2.7.0", source="torch_cuda128"}
 pytest = "^6.2.5"
 pre-commit = "^2.17.0"
 jupyter-client = "^7.0.0"
