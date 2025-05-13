@@ -11,11 +11,6 @@ exclude = [
     "gym_microrts/microrts/lib/*.jar",
 ]
 
-[[tool.poetry.source]]
-name     = "pytorch-nightly"
-url      = "https://download.pytorch.org/whl/nightly/cu128"
-priority = "explicit"
-
 [tool.poetry.dependencies]
 python = ">=3.9.0,<3.10"
 gym = "0.23.1"
@@ -30,7 +25,7 @@ tensorboard = "^2.5.0"
 wandb = "^0.12.1"
 trueskill = "^0.4.5"
 stable-baselines3 = "^1.1.0"
-torch = { version = "*", source = "pytorch-nightly" }
+torch = { version = "2.7.0"}
 pytest = "^6.2.5"
 pre-commit = "^2.17.0"
 jupyter-client = "^7.0.0"
