@@ -13,7 +13,7 @@ exclude = [
 
 [[tool.poetry.source]]
 name     = "pytorch-nightly"
-url      = "https://download.pytorch.org/whl/nightly/torch/"
+url      = "https://download.pytorch.org/whl/nightly/cu128"
 priority = "explicit"
 
 [tool.poetry.dependencies]
