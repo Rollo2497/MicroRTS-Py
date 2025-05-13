@@ -14,6 +14,7 @@ exclude = [
 [[tool.poetry.source]]
 name = "pytorch-nightly-cu121"
 url = "https://download.pytorch.org/whl/nightly/cu121"
+default = false
 
 [tool.poetry.dependencies]
 python = ">=3.9.0,<3.10"
@@ -23,7 +24,7 @@ peewee = "^3.14.8"
 torch         = { version = "*", source = "pytorch-nightly-cu121" }
 torchvision   = { version = "*", source = "pytorch-nightly-cu121" }
 torchaudio    = { version = "*", source = "pytorch-nightly-cu121" }
-spyder        = { version = "^5.1.5"}
+spyder        = { version = "^5.1.5",  optional = true }
 PettingZoo = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
