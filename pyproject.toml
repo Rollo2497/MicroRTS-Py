@@ -23,7 +23,7 @@ peewee = "^3.14.8"
 torch         = { version = "*", source = "pytorch-nightly-cu121" }
 torchvision   = { version = "*", source = "pytorch-nightly-cu121" }
 torchaudio    = { version = "*", source = "pytorch-nightly-cu121" }
-spyder        = { version = "^5.1.5", optional = true }
+spyder        = { version = "^5.1.5"}
 PettingZoo = "^1.16.0"
 
 [tool.poetry.dev-dependencies]
