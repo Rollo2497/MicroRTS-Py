@@ -47,3 +47,6 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.extras]
 spyder = ["spyder"]
 cleanrl = ["cleanrl"]
+
+[tool.poetry.dev-dependencies]
+jupyter-client = "^7.0.0"
