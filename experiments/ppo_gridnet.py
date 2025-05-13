@@ -21,7 +21,8 @@ from torch.utils.tensorboard import SummaryWriter
 from gym_microrts import microrts_ai
 from gym_microrts.envs.vec_env import MicroRTSGridModeVecEnv
 
-torch.cuda.is_available()
+print(torch.cuda.is_available())
+print(torch.cuda.device_count())
 
 def parse_args():
     # fmt: off
