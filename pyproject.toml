@@ -11,6 +11,11 @@ exclude = [
     "gym_microrts/microrts/lib/*.jar",
 ]
 
+[[tool.poetry.source]]
+name = "torch_cuda128"
+url = "https://download.pytorch.org/whl/cu128"
+priority = "explicit"
+
 [tool.poetry.dependencies]
 python = ">=3.9.0,<3.10"
 gym = "0.23.1"
