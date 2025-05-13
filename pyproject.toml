@@ -32,6 +32,7 @@ torchvision  = { version = "*"}
 torchaudio   = { version = "*"}
 pytest = "^6.2.5"
 pre-commit = "^2.17.0"
+jupyter-client = "^7.0.0"
 
 [tool.poetry-dynamic-versioning]
 enable = true
@@ -48,5 +49,3 @@ build-backend = "poetry.core.masonry.api"
 spyder = ["spyder"]
 cleanrl = ["cleanrl"]
 
-[tool.poetry.dev-dependencies]
-jupyter-client = "^7.0.0"
