@@ -11,12 +11,6 @@ exclude = [
   "gym_microrts/microrts/lib/*.jar",
 ]
 
-# 1) Your ordinary PyPI index (no “default” key needed – it’s implicit)
-[[tool.poetry.source]]
-name = "pypi"
-url  = "https://pypi.org/simple"
-
-# 2) The PyTorch nightly CUDA-12.1 wheels
 [[tool.poetry.source]]
 name = "pytorch-nightly-cu121"
 url  = "https://download.pytorch.org/whl/nightly/cu121"
@@ -28,7 +22,6 @@ JPype1        = "^1.3.0"
 peewee        = "^3.14.8"
 PettingZoo    = "^1.16.0"
 
-# 3) Only these three packages come from the nightly-cu121 index:
 torch         = { version = "*", source = "pytorch-nightly-cu121" }
 torchvision   = { version = "*", source = "pytorch-nightly-cu121" }
 torchaudio    = { version = "*", source = "pytorch-nightly-cu121" }
