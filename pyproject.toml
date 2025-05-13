@@ -25,7 +25,11 @@ tensorboard = "^2.5.0"
 wandb = "^0.12.1"
 trueskill = "^0.4.5"
 stable-baselines3 = "^1.1.0"
-torch = "2.7.0"
+# pull the nightly CUDA-12.1 build of torch from the above index:
+torch = { version = "*", source = "pytorch-nightly-cu121" }
+# if you need torchvision / torchaudio as well:
+torchvision  = { version = "*", source = "pytorch-nightly-cu121" }
+torchaudio   = { version = "*", source = "pytorch-nightly-cu121" }
 pytest = "^6.2.5"
 pre-commit = "^2.17.0"
 
